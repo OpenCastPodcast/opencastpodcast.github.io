@@ -1,0 +1,24 @@
+<header>
+  <div class="container">
+    <div class="logo">
+      <h1 class="site-logo">
+        <a href="{{ .Site.BaseURL }}">
+          {{ .Site.Title }}.
+        </a>
+      </h1>
+    </div>
+    <div class="menubar">
+      <nav>
+        <ul>
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
+          <li {{ if or ($currentPage.IsMenuCurrent "main" . ) ($currentPage.HasMenuCurrent "main" . )}}
+            class="current-menu" {{ end }}>
+            <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

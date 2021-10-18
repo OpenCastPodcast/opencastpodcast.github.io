@@ -1,0 +1,55 @@
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="HandheldFriendly" content="true">
+
+  <meta name="ahrefs-site-verification" content="">
+  <meta name="google-site-verification" content="" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="address=no" />
+
+  <title> {{ .Site.Title }} - {{ .Title }}</title>
+  <meta name="description" content="">
+  <link rel="icon" href="{{ .Site.BaseURL }}/favicon.png" sizes="32x32" >
+  
+
+  <link rel="canonical" href="">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:description" content="" />
+
+  <meta property="og:image" content="" />
+  <meta property="og:image:secure_url" content="" />
+
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="628" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="" />
+
+  <meta name="apple-mobile-web-app-title" content="">
+  <meta name="application-name" content="">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+
+  {{ $sass := resources.Get "sass/main.scss" }}
+  {{ $style := $sass | resources.ToCSS }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+</head>

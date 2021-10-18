@@ -1,0 +1,27 @@
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 4rem;
+  padding: 0 20vw;
+
+  .container {
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      h1 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        a {
+          font-size: 1.5rem;
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}
