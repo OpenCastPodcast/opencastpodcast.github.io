@@ -1,0 +1,13 @@
+baseURL = "https://opencastpodcast.github.io/"
+languageCode = "pt-br"
+title = "OpenCast"
+theme = "opencast"
+
+[permalinks]
+fixed = ":title/"
+blog = ":slug"
+pages = ":slug"
+
+[taxonomies]
+tag = "tags"
+category = "categories"

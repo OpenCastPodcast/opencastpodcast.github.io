@@ -1,0 +1,12 @@
+name = "opencast"
+license = "MIT"
+licenselink = "https://github.com/OpenCastPodcast/opencastpodcast.github.io/blob/main/LICENSE"
+description = ""
+homepage = "http://opencast.com.br/"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Regis Tomkiel<regis@doseextra.com>"
+  homepage = "tomkiel.com.br"
