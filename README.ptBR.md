@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://opencast.com.br" target="_blank">
-    <img src="./logo/png/blue.png" width="300">
+    <img src="https://raw.githubusercontent.com/OpenCastPodcast/art/main/logo/png/blue.png" width="300">
   </a>
 </p>
 
