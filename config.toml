@@ -11,3 +11,21 @@ pages = ":slug"
 [taxonomies]
 tag = "tags"
 category = "categories"
+
+[[menu.main]]
+name = "Sobre"
+identifier = "sobre"
+url = "/sobre/"
+weight = 2
+
+[[menu.main]]
+name = "Podcast"
+identifier = "podcast"
+url = "/podcast/"
+weight = 3
+
+[[menu.main]]
+name = "Pessoas"
+identifier = "pessoas"
+url = "/pessoas/"
+weight = 4
