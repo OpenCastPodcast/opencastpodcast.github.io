@@ -1,27 +1,73 @@
 header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 4rem;
-  padding: 0 20vw;
-
-  .container {
-    height: 100%;
-    width: 100%;
-    padding: 0 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 8rem;
     display: flex;
     align-items: center;
-
-    .logo {
-      h1 {
-        font-family: "Ubuntu", sans-serif;
-        font-weight: 500;
-        a {
-          font-size: 1.5rem;
-          color: var(--primary);
+    justify-content: center;
+    .container {
+        height: 100%;
+        width: 100%;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (min-width: 1024px) {
+            max-width: 1024px;
         }
-      }
+        .logo {
+            h1 {
+                font-family: "Ubuntu", sans-serif;
+                font-weight: 500;
+                a {
+                    font-size: 1.5rem;
+                    color: var(--primary);
+                }
+            }
+        }
+        .menubar {
+            nav {
+                display: flex;
+                ul {
+                    display: flex;
+                    li {
+                        list-style-type: none;
+                        position: relative;
+                        &.current-menu,
+                        &:hover {
+                            a {
+                                color: var(--text-darkest);
+                                &::before {
+                                    background: var(--primary);
+                                    border-radius: 50%;
+                                    margin: 10px;
+                                    height: 10px;
+                                    width: 10px;
+                                    content: "";
+                                    box-shadow: 0 0 0 0 var(--primary);
+                                    transform: scale(1);
+                                    animation: pulse 2s infinite;
+                                    position: absolute;
+                                    z-index: 9;
+                                    top: 50%;
+                                    margin-top: -5px;
+                                    left: -0.5em;
+                                    opacity: 1 !important;
+                                }
+                            }
+                        }
+                        a {
+                            padding: 1em 1em;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: var(--text);
+                            transition: color 200ms cubic-bezier(.78, .14, .2, .86), background-color 200ms cubic-bezier(.78, .14, .2, .86);
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
 }
